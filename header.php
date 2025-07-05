@@ -17,7 +17,7 @@
     <div class="nav-bar">
       <a id="logo" href="/">
         <img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Ashbringer Logo" />
-        
+
       </a>
 
       <button id="nav_toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -29,6 +29,31 @@
         <li>
           <a href="/about/" class="nav-link">
             About
+          </a>
+        </li>
+        <li>
+          <a href="/listen/" class="nav-link">
+            Listen
+          </a>
+        </li>
+        <li>
+          <a href="/listen/" class="nav-link">
+            Listen
+          </a>
+        </li>
+        <li>
+          <a href="/events/" class="nav-link">
+            Events
+          </a>
+        </li>
+        <li>
+          <a href="/contact/" class="nav-link">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="/digital-press-kit/" class="nav-link">
+            Digital Press Kit
           </a>
         </li>
       </ul>
