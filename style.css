@@ -1,0 +1,18 @@
+/*
+Theme Name: ashbringermusic.com
+Theme URI: https://ashbringermusic.com/
+Author: Zack Morgenthaler
+Author URI: https://zackmorgenthaler.com/
+Description: A custom WordPress theme for the band Ashbringer. Heavy, melodic, and dark.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ashbringer
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmRldi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Q0FVQzs7QUFFRDs7O0lBR0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG5UaGVtZSBOYW1lOiBhc2hicmluZ2VybXVzaWMuY29tXG5UaGVtZSBVUkk6IGh0dHBzOi8vYXNoYnJpbmdlcm11c2ljLmNvbS9cbkF1dGhvcjogWmFjayBNb3JnZW50aGFsZXJcbkF1dGhvciBVUkk6IGh0dHBzOi8vemFja21vcmdlbnRoYWxlci5jb20vXG5EZXNjcmlwdGlvbjogQSBjdXN0b20gV29yZFByZXNzIHRoZW1lIGZvciB0aGUgYmFuZCBBc2hicmluZ2VyLiBIZWF2eSwgbWVsb2RpYywgYW5kIGRhcmsuXG5WZXJzaW9uOiAxLjBcbkxpY2Vuc2U6IEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIHYyIG9yIGxhdGVyXG5MaWNlbnNlIFVSSTogaHR0cHM6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy9ncGwtMi4wLmh0bWxcblRleHQgRG9tYWluOiBhc2hicmluZ2VyXG4qL1xuXG4qLFxuKjpiZWZvcmUsXG4qOmFmdGVyIHtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufSJdfQ== */

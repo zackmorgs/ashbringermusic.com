@@ -1,0 +1,17 @@
+/*
+Theme Name: ashbringermusic.com
+Theme URI: https://ashbringermusic.com/
+Author: Zack Morgenthaler
+Author URI: https://zackmorgenthaler.com/
+Description: A custom WordPress theme for the band Ashbringer. Heavy, melodic, and dark.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ashbringer
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
