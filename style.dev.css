@@ -10,13 +10,153 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ashbringer
 */
 
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 18px;
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    background:black;
-    color:white;
+    font-weight: 400;
+    font-style: normal;
+    background: #0a0a0a;
+    color: #f1f1f1;
+    margin: 0;
+
+}
+
+#nav_main {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    /* background-color:#111; */
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    img {
+        height: 3rem;
+    }
+}
+
+#nav_toggle {
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-family: "Manufacturing Consent", sans-serif;
+    font-size: 1.25rem;
+    display: block;
+}
+
+#nav_links {}
+
+.open #nav_links {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #0a0a0a;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.open .nav-list {
+    height: auto;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: white;
+    font-size: 1.25rem;
+    /* letter-spacing: 1pt; */
+    display: block;
+
+    &:visited {
+        color: white;
+    }
+}
+
+#hero_main {
+    background: url('/wp-content/themes/ashbringermusic.com/assets/img/band_b&w.jpg') no-repeat center center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+.hero-content {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        display: block;
+        filter: drop-shadow(0px 0px 18px rgb(0 0 0));
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+#footer_main {
+    padding: 1rem;
 }
