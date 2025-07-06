@@ -33,6 +33,24 @@ html {
     font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
 body {
     font-weight: 400;
     font-style: normal;
@@ -42,6 +60,38 @@ body {
 
 }
 
+.wp-theme-ashbringermusiccom {
+    position: relative;
+}
+
+.frame {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.body-bg {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    z-index: 0;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 .text-center {
     text-align: center;
@@ -58,8 +108,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #111;
-    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, black, transparent);
+    backdrop-filter: blur(1px);
 }
 
 #logo {
@@ -71,6 +121,7 @@ body {
 
     img {
         height: 3rem;
+        filter: drop-shadow(1px 1px 0px rgb(0 0 0)) drop-shadow(-1px -1px 0px rgb(0 0 0)) drop-shadow(3px 0px 0px rgb(0 0 0));
     }
 }
 
@@ -79,6 +130,7 @@ body {
 }
 
 .hamburger {
+    background: #101010;
     font: inherit;
     display: inline-block;
     overflow: visible;
@@ -91,13 +143,13 @@ body {
     text-transform: none;
     color: inherit;
     border: 0;
-    background-color: transparent;
+    height: 56px;
 }
 
 .hamburger.is-active .hamburger-inner,
 .open .hamburger .hamburger-inner:after,
 .open .hamburger .hamburger-inner:before {
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .hamburger-box {
@@ -112,7 +164,7 @@ body {
     position: absolute;
     width: 40px;
     height: 4px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     background-color: #fff;
     top: 50%;
     display: block;
@@ -140,7 +192,7 @@ body {
     position: absolute;
     width: 40px;
     height: 4px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     background-color: #fff;
 }
 
@@ -168,8 +220,8 @@ body {
 }
 
 .open .hamburger-inner {
-    background:transparent;
-    width:0px;
+    background: transparent;
+    width: 0px;
 }
 
 #nav_links {}
@@ -178,7 +230,8 @@ body {
     position: absolute;
     right: 0;
     left: 0;
-    background: #0a0a0a;
+    box-shadow: 0px 0px 1rem #0000007d;
+    /* background: #0a0a0a; */
 }
 
 .nav-list {
@@ -195,6 +248,7 @@ body {
 
 .open .nav-list {
     height: auto;
+    background: #101010;
 }
 
 .nav-link {
@@ -205,6 +259,8 @@ body {
     font-size: 1.25rem;
     /* letter-spacing: 1pt; */
     display: block;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1.0), -1px -1px 0px rgba(0, 0, 0, 1.0);
+    background: #101010e0;
 
     &:visited {
         color: white;
@@ -212,34 +268,51 @@ body {
 }
 
 #hero_main {
-    background: url('/wp-content/themes/ashbringermusic.com/assets/img/band_b&w.jpg') no-repeat center center;
-    background-size: cover;
-    /* height: 100vh; */
+    margin: 1rem 1rem 0;
+    z-index: 1;
+    position: relative;
 }
 
 .hero-content {
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.25);
+    /* padding: 1rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    h2,
+    h3 {
+        text-shadow: -1px -1px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
     .logo {
         display: block;
-        filter: drop-shadow(0px 0px 18px rgb(0 0 0));
+        filter: drop-shadow(1px 1px 0px rgb(0 0 0)) drop-shadow(-1px -1px 0px rgb(0 0 0)) drop-shadow(3px 0px 0px rgb(0 0 0));
     }
 }
 
+
 .btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem;
     background-color: #f1f1f1;
     color: black;
     text-decoration: none;
     font-weight: 400;
-    border-radius: 4px;
+    border-radius: 2rem;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0);
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    font-family: "Barlow", sans-serif;
 
     &:hover {
         transform: scale(1.05);
@@ -251,31 +324,39 @@ body {
 }
 
 .btn-primary {
-    background-color: #23870a;
-    color: #ffffff;
+    background-color: #29c103;
+    color: #181818;
+    min-width: 12ch;
 }
 
+#press_list,
 .btn-group {
     padding: 1rem;
     margin: 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+
 
 }
 
 .btn-social {
-    background: #161616;
+    background: #181818;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 12ch;
+    min-width: 9ch;
+
+    .icon-x {
+        filter: invert();
+    }
 }
 
 .content {
     padding: 1rem;
+    z-index: 1;
+    position: relative;
 }
 
 .icon {
@@ -284,6 +365,142 @@ body {
     height: 2rem;
 }
 
-#footer_main {
-    padding: 1rem;
+#main_social {
+    background: linear-gradient(0deg, black, transparent);
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(1px);
+
+    h3 {
+        margin: 0;
+    }
+    .content {
+        background:transparent;
+        padding-top:0;
+    }
 }
+
+#content_press {
+    margin-bottom: 1rem;
+
+    .content {
+        background: #0a0a0a;
+        padding: 1rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+#press_list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+    height: auto;
+
+    a {
+        padding: 1rem;
+    }
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1.0), -1px -1px 0px rgba(0, 0, 0, 1.0);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+}
+
+#footer_main {
+
+    position: relative;
+    z-index: 1;
+}
+
+.hidden-sm {
+    display: none;
+}
+
+.content {
+    background: #0a0a0a;
+    padding: 1rem 1rem 2rem;
+}
+
+#featured_release {
+
+    .release img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+#featured_merch {
+    margin: 1rem auto;
+
+    .merch {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        filter: saturate(0.0);
+    }
+}
+
+@media (min-width: 414px) {
+    .hidden-sm {
+        display: block;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #main_social .content,
+    .hero-content {
+        max-width: 56ch;
+        margin: 0 auto;
+    }
+
+    #press_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+
+        a {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    ;
+
+    #press_list li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
