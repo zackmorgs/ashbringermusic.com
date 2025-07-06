@@ -8,9 +8,7 @@
   <?php wp_head(); ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Manufacturing+Consent&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/favicon-16x16.png">
@@ -26,7 +24,8 @@
         </a>
 
         <button id="nav_toggle" aria-label="Toggle navigation" aria-expanded="false">
-          Menu
+          <span></span>
+          <span></span>
         </button>
       </div>
       <div id="nav_links">

@@ -42,6 +42,11 @@ body {
 
 }
 
+
+.text-center {
+    text-align: center;
+}
+
 #nav_main {
     position: sticky;
     top: 0;
@@ -69,14 +74,30 @@ body {
 }
 
 #nav_toggle {
-    text-transform: uppercase;
     background: transparent;
     color: white;
     padding: 1rem;
     border: none;
-    font-family: "Manufacturing Consent", sans-serif;
+    font-family: "IM Fell English", serif;
     font-size: 1.25rem;
     display: block;
+
+    span {
+        display: block;
+        width: 2rem;
+        height: 0.25rem;
+        background-color: #b7b2b2;
+        margin: 0.5rem auto;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.open #nav_toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(0.5rem);
+}
+
+.open #nav_toggle span:nth-child(2) {
+    transform: rotate(-45deg) translateY(0.5rem);
 }
 
 #nav_links {}
@@ -144,7 +165,7 @@ body {
     background-color: #f1f1f1;
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 4px;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
@@ -155,6 +176,40 @@ body {
     &:active {
         transform: scale(0.95);
     }
+}
+
+.btn-primary {
+    background-color: #23870a;
+    color: #ffffff;
+}
+
+.btn-group {
+    padding: 1rem;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.btn-social {
+    background: #161616;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 12ch;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.icon {
+    display: inline-block;
+    width: auto;
+    height: 2rem;
 }
 
 #footer_main {
