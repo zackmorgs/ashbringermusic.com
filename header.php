@@ -22,11 +22,11 @@
         <a id="logo" href="/">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo_spawn.svg" alt="Ashbringer Logo" />
         </a>
-
-        <button id="nav_toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-        </button>
+        <div id="nav_toggle" class="hamburger hamburger--stand js-hamburger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
       </div>
       <div id="nav_links">
         <ul class="nav-list">
