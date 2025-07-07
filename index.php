@@ -6,11 +6,8 @@ get_header(); ?>
         <h2>Blog</h2>
     </div>
 </header>
-<main class="container">
+<main class="main-content">
     <section class="blog-posts">
-        <header class="hero">
-            <h3 id="latest_posts">Latest Posts</h3>
-        </header>
         <div class="post-list">
             <?php
             // Query the last 3 posts

@@ -60,6 +60,10 @@ body {
 
 }
 
+.invert {
+    filter: invert(1);
+}
+
 .wp-theme-ashbringermusiccom {
     position: relative;
 }
@@ -72,7 +76,6 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    overflow-y: scroll;
 }
 
 .body-bg {
@@ -277,6 +280,10 @@ body {
     }
 }
 
+.hero {
+    padding: 2rem 1rem 1rem;
+}
+
 #hero_main {
     margin: 1rem 1rem 0;
     z-index: 1;
@@ -291,7 +298,7 @@ body {
     justify-content: center;
     z-index: 1;
     position: relative;
-    
+
     h2,
     h3 {
         text-shadow: -1px -1px 0px black, 1px 1px 0px black, 2px 2px 0px black;
@@ -328,6 +335,7 @@ body {
     letter-spacing: 1pt;
     text-transform: uppercase;
     font-family: "Barlow", sans-serif;
+    text-shadow: none;
 
     &:hover {
         transform: scale(1.05);
@@ -447,7 +455,7 @@ body {
     z-index: 1;
     padding: 1rem;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1.0), -1px -1px 0px rgba(0, 0, 0, 1.0);
-    background: rgba(0, 0, 0, 0.75);
+    /* background: rgba(0, 0, 0, 0.75); */
     backdrop-filter: blur(2px);
 
 
@@ -464,6 +472,10 @@ a {
     position: relative;
     z-index: 1;
     display: block;
+
+    .content {
+        margin-bottom: 0;
+    }
 }
 
 .hidden-sm {
@@ -473,6 +485,7 @@ a {
 .content {
     background: #0a0a0a;
     padding: 1rem 1rem 2rem;
+    margin-bottom: 1rem;
 }
 
 #featured_release {
@@ -500,9 +513,14 @@ a {
     }
 }
 
+.post-list {
+    margin: 0rem 1rem;
+}
+
 .post-list a {
     text-decoration: none;
     color: inherit;
+
 }
 
 .post.content {
@@ -614,6 +632,24 @@ a {
     color: #1167eb;
 }
 
+#content_contact {
+    .content {
+        text-align: center;
+    }
+
+    .wp-block-button {
+        margin: 0 auto;
+    }
+}
+
+.text-center .btn,
+.text-center .wp-block-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 @media (min-width: 414px) {
     .hidden-sm {
         display: block;
@@ -624,38 +660,21 @@ a {
 @media (min-width: 768px) {
 
     #main_social .content,
-    .hero-content
-    {
+    .hero-content {
         max-width: 45ch;
         margin: 0 auto;
     }
-    .
+
+    #content_press {
+        background: #0a0a0a;
+    }
+
     #press_list {
         .icon {
             width: auto;
             height: 3.5rem;
         }
     }
-    /* #press_list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
-
-        a {
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-
-            img {
-                margin: 0 auto;
-            }
-        }
-    } */
-
-    ;
 
     #press_list li {
         display: flex;
@@ -664,10 +683,142 @@ a {
         justify-content: center;
         padding: 0;
     }
+
+    #event_services {
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        /* margin:1rem auto; */
+        text-align: center;
+    }
+
+    .md\:row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .md\:bg-black {
+        position: relative;
+        z-index: 1;
+        background: #0a0a0a;
+    }
+
+    #featured_release,
+    #featured_merch {
+        width: 50%;
+    }
+
+    #featured_merch {
+        margin-top: 0;
+
+        .merch {
+            aspect-ratio: 1 / 1;
+        }
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (min-width: 1024px) {}
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+
+    #logo {
+        transition: transform 1s ease-in-out;
+    }
+
+    #logo:hover {
+        transform: rotate(360deg);
+    }
+
+    #logo:active {
+        transform: scale(0.95);
+    }
+
+    .nav-link {
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .nav-link:hover {
+        background: #f6d503d9;
+        color: black;
+        text-shadow: none;
+    }
+
+    .nav-link:active {
+        transform: scale(0.95);
+    }
+
+    #press_list {
+        animation: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #press_list {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .nav-container {
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-bar {
+        background: none;
+    }
+
+    #nav_toggle {
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        height: auto;
+        overflow: visible;
+        background: none;
+        padding: 0;
+        background: #0a0a0a;
+        border-radius: 0.5rem;
+    }
+
+    .nav-link {
+        margin: 0 0.5rem;
+    }
+
+    #featured_release,
+    #featured_merch {
+        max-width: calc(1024px / 2);
+        margin: 0;
+    }
+
+    .main-content {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .hero-content {
+        max-width: 72ch;
+    }
+    #main_social .content {
+        max-width: 48ch;
+    }
+    #main_social {
+        background: none;
+    }
+}
 
 @media (min-width: 1536px) {}
