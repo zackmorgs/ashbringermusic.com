@@ -33,6 +33,10 @@ html {
     font-style: normal;
 }
 
+.home .main-content {
+    padding:0;
+}
+
 h1,
 h2,
 h3,
@@ -207,6 +211,9 @@ body {
     bottom: -10px;
 }
 
+.open #nav_toggle {
+    border-radius:0.5rem;
+}
 .open #nav_toggle span:nth-child(1) {
     transform: rotate(45deg) translateY(0.5rem);
 }
@@ -389,11 +396,12 @@ body {
 }
 
 #main_social {
-    background: linear-gradient(0deg, black, transparent);
+    /* background: linear-gradient(0deg, black, transparent); */
     z-index: 1;
     position: relative;
     backdrop-filter: blur(1px);
-
+    /* margin-right:-1rem;
+    margin-left: -1rem; */
     h3 {
         margin: 0;
     }
@@ -487,9 +495,11 @@ a {
     padding: 1rem 1rem 2rem;
     margin-bottom: 1rem;
 }
-
+.release:hover {
+        cursor: pointer;
+    }
 #featured_release {
-
+    
     .release img {
         width: 100%;
         height: auto;
@@ -499,7 +509,9 @@ a {
     }
 }
 
-
+.merch:hover {
+    cursor: pointer;
+}
 #featured_merch {
     margin: 1rem auto;
 
@@ -785,7 +797,7 @@ a {
     #nav_toggle {
         display: none;
     }
-
+    
     .nav-list {
         flex-direction: row;
         height: auto;
