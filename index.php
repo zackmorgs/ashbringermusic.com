@@ -1,7 +1,11 @@
 <?php
 /* Template Name: Blog Page */
 get_header(); ?>
-
+<header class="hero">
+    <div class="hero-content">
+        <h2>Blog</h2>
+    </div>
+</header>
 <main class="container">
     <section class="blog-posts">
         <header class="hero">

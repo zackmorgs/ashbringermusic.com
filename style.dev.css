@@ -249,6 +249,10 @@ body {
 .open .nav-list {
     height: auto;
     background: #101010;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 1rem;
 }
 
 .nav-link {
@@ -265,6 +269,12 @@ body {
     &:visited {
         color: white;
     }
+
+    &.active {
+        background: #00000078;
+        /* color:#0a0a0a;
+        text-shadow:none; */
+    }
 }
 
 #hero_main {
@@ -279,7 +289,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    z-index: 1;
+    position: relative;
+    
     h2,
     h3 {
         text-shadow: -1px -1px 0px black, 1px 1px 0px black, 2px 2px 0px black;
@@ -398,15 +410,36 @@ body {
     }
 }
 
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 #press_list {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    animation: scroll-left 10s linear infinite;
     padding: 0;
     height: auto;
+
 
     a {
         padding: 1rem;
     }
+}
+
+.overflow-container {
+    overflow: hidden;
+
+    white-space: nowrap;
 }
 
 .main-content {
@@ -416,12 +449,21 @@ body {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1.0), -1px -1px 0px rgba(0, 0, 0, 1.0);
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(2px);
+
+
+}
+
+a {
+    color: #0f6bff;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 #footer_main {
-
+    margin-top: 1rem;
     position: relative;
     z-index: 1;
+    display: block;
 }
 
 .hidden-sm {
@@ -502,7 +544,7 @@ body {
 }
 
 .required-field-message {
-    display:block;
+    display: block;
 }
 
 .required-field-message,
@@ -582,12 +624,19 @@ body {
 @media (min-width: 768px) {
 
     #main_social .content,
-    .hero-content {
-        max-width: 56ch;
+    .hero-content
+    {
+        max-width: 45ch;
         margin: 0 auto;
     }
-
+    .
     #press_list {
+        .icon {
+            width: auto;
+            height: 3.5rem;
+        }
+    }
+    /* #press_list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
@@ -604,7 +653,7 @@ body {
                 margin: 0 auto;
             }
         }
-    }
+    } */
 
     ;
 

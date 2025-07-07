@@ -49,38 +49,40 @@
 <section id="content_press">
     <div class="content">
         <h4 class="text-center">Press</h4>
-        <ul id="press_list">
-            <li>
-                <a href="https://metalinjection.net/?s=ashbringer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metal_injection-logo.png"
-                        alt="As seen on Metal Injection" class="icon" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.metalsucks.net/?s=ashbringer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-metal_sucks.svg"
-                        alt="As seen on MetalSucks" class="icon" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.metalunderground.com/bands/details.cfm?bandid=25229&tab=news">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metalundergroundcom_logo.gif"
-                        alt="As seen on Metal Underground" class="icon" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.invisibleoranges.com/?s=ashbringer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/invisible-oranges-logo.png"
-                        alt="As seen on Metal Underground" class="icon" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.angrymetalguy.com/?s=ashbringer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/angry-metal-guy-logo.webp"
-                        alt="As seen on Metal Underground" class="icon" />
-                </a>
-            </li>
-        </ul>
+        <div class="overflow-container">
+            <ul id="press_list">
+                <li>
+                    <a href="https://metalinjection.net/?s=ashbringer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metal_injection-logo.png"
+                            alt="As seen on Metal Injection" class="icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.metalsucks.net/?s=ashbringer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-metal_sucks.svg"
+                            alt="As seen on MetalSucks" class="icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.metalunderground.com/bands/details.cfm?bandid=25229&tab=news">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metalundergroundcom_logo.gif"
+                            alt="As seen on Metal Underground" class="icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.invisibleoranges.com/?s=ashbringer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/invisible-oranges-logo.png"
+                            alt="As seen on Metal Underground" class="icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.angrymetalguy.com/?s=ashbringer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/angry-metal-guy-logo.webp"
+                            alt="As seen on Metal Underground" class="icon" />
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 <section id="featured_release">
