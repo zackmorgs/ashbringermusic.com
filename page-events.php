@@ -25,7 +25,8 @@
             </a>
         </div>
     </section>
-    <div class="content">
+    <section id="event_content">
+        <div class="content">
         <?php
         if (have_posts()):
             while (have_posts()):
@@ -35,5 +36,6 @@
         endif;
         ?>
     </div>
+    </section>
 </main>
 <?php get_footer(); ?>

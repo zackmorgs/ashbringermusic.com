@@ -5,15 +5,17 @@
     </div>
 </header>
 <main class="main-content">
-    <div class="content text-center">
-        <?php
-        if (have_posts()):
-            while (have_posts()):
-                the_post();
-                the_content(); // This is the important line!
-            endwhile;
-        endif;
-        ?>
-    </div>
+    <section id="press_kit_content">
+        <div class="content text-center">
+            <?php
+            if (have_posts()):
+                while (have_posts()):
+                    the_post();
+                    the_content(); // This is the important line!
+                endwhile;
+            endif;
+            ?>
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>

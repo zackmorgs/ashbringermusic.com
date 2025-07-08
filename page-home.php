@@ -92,7 +92,7 @@
             </div>
         </div>
     </section>
-    <div class="md:row md:bg-black">
+    <div id="featured" class="md:row md:bg-black">
         <section id="featured_release">
             <div class="content text-center">
                 <h4>Featured Release</h4>

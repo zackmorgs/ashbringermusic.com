@@ -25,7 +25,7 @@ get_header(); ?>
                             <div class="excerpt"><?php the_excerpt(); ?></div>
                         </article>
                     </a>
-                <?php endwhile; ?> wp_reset_postdata(); else: ?>
+                <?php endwhile; wp_reset_postdata(); else: ?>
                 <p>No posts found.</p>
             <?php endif; ?>
         </div>
