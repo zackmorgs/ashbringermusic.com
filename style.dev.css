@@ -674,7 +674,8 @@ a {
 
 .single .content {
     margin: 0 auto;
-    max-width:48ch;
+    max-width: 56ch;
+    border-radius:0.5rem;
 }
 
 @media (min-width: 414px) {
@@ -715,7 +716,8 @@ a {
         text-align: center;
     }
 
-    .btn {
+    .btn,
+    .comment-reply-link {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -867,7 +869,10 @@ a {
         background: none;
     }
 
-
+    .single .content {
+        max-width: 36rem;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1536px) {}

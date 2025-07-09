@@ -46,3 +46,4 @@ ScrollReveal().reveal('#event_content');
 ScrollReveal().reveal('.btn');
 ScrollReveal().reveal('#content_contact');
 ScrollReveal().reveal('#press_kit_content');
+ScrollReveal().reveal('#footer_main');
