@@ -328,7 +328,8 @@ body {
 
 .btn,
 #submit,
-.wp-element-button {
+.wp-element-button,
+.comment-reply-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,6 +602,8 @@ a {
     border-radius: 0.5rem;
     box-shadow: 0px 0px 1rem #0000007d;
     border: none;
+        background: #141414;
+    color: #f1f1f1;
 }
 
 .commentlist {
@@ -612,8 +615,8 @@ a {
 .comment {
     margin-bottom: 1rem;
     padding: 1rem;
-    background: #f1f1f1;
-    color: #0a0a0a;
+    background: #141414;
+    color: #b8b8b8;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 1rem #0000007d;
 }
@@ -647,6 +650,8 @@ a {
 .comment-meta a {
     font-size: 0.875rem;
     color: #1167eb;
+    margin-top: 0.5rem;
+    display:block;
 }
 
 #content_contact {
@@ -665,6 +670,11 @@ a {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.single .content {
+    margin: 0 auto;
+    max-width:48ch;
 }
 
 @media (min-width: 414px) {
