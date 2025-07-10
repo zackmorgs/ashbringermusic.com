@@ -773,6 +773,11 @@ a {
         border-radius: 0.5rem;
         overflow: hidden;
     }
+
+    .nav-link {
+        background:none;
+        text-shadow:none;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -793,7 +798,8 @@ a {
         transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
     }
 
-    .nav-link:hover {
+    .nav-link:hover,
+    .nav-link.active {
         background: #f6d503d9;
         color: black;
         text-shadow: none;
