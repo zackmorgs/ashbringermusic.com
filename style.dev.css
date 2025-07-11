@@ -879,6 +879,15 @@ a {
         max-width: 36rem;
         margin: 0 auto;
     }
+    #press_list {
+        .icon {
+            transition: transform 0.2s ease-in-out;
+        }
+        .icon:hover {
+            transform:scale(1.05);
+        }
+    }
+     
 }
 
 @media (min-width: 1536px) {}
